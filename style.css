@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.main{
+  display: inline-flex;
+}
+.box {
+  margin-top: 170px;
+  font-size: 5em;
+  padding: 20px;
+  color: red;
+  font-weight: 800;
+  animation: aniload 5s;
+  background-color: black;
+}
+
+#box1::after {
+  content: "Coming";
+  display:flex;
+  transform:rotateX(180deg);
+  background-image:
+    linear-gradient(180deg,rgba(255,0,0,.5) 10%,rgba(255,0,0,.5));
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+
+#box2{
+  color: rgb(37,116,236);
+  margin-top: 170px;
+  background-color: black;
+}
+#box2::after {
+  content: "Soon";
+  display:flex;
+  transform:rotateX(180deg);
+  background-image:
+     linear-gradient(180deg,rgba(37,116,236,.0) 10%,rgba(37,116,236,.5));
+    -webkit-background-clip: text;
+  color: transparent;
+  
+}
+
+@keyframes aniload {
+  from {
+    transform: translate(-1000px, 0px)
+  }
+  to {
+    transform: translate(0px, 0px)
+  }
+}
+
+
+
+
+
+
